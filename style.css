@@ -1,0 +1,24 @@
+html,
+body,
+.app {
+  margin: 0;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 0 10px 20px 10px;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote {
+  font-style: italic;
+}
