@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quotes Randomizer</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
   </head>
-  <body>
+  <body onload="generateQuote()">
     <div class="app">
       <div class="container">
         <h1 class="header">Cytat dnia...</h1>
-        <p class="quote">
-          "Nienawidziłem każdej minuty treningu, ale powtarzałem sobie: nie
-          pododawaj się, przecierp teraz i żyj resztę życia jako mistrz."
-        </p>
-        <button class="generate">Losuj nowy</button>
+        <p class="quote"></p>
+        <span class="author"></span>
+        <button onclick="generateQuote()" class="generate">Losuj nowy</button>
       </div>
+      <span class="source">
+        zdjęcie:https://images.unsplash.com/photo-1499346030926-9a72daac6c63
+      </span>
     </div>
   </body>
 </html>

@@ -6,6 +6,7 @@ body,
 }
 
 .app {
+  background-size: cover;
   background-image: url("https://images.unsplash.com/photo-1499346030926-9a72daac6c63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80");
   display: flex;
   justify-content: center;
@@ -14,12 +15,28 @@ body,
 
 .container {
   padding: 0 10px 20px 10px;
-  background-color: bisque;
+  background-color: rgba(220, 220, 220, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .quote {
+  margin-bottom: 0;
   font-style: italic;
+}
+
+span.author {
+  align-self: flex-end;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+span.source {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  font-style: italic;
+  font-size: 0.7rem;
 }
