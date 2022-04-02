@@ -5,7 +5,6 @@ async function generateQuote() {
   const response = await fetch(API);
   const data = await response.json();
   const quote = data.quotes[0];
-
   document.querySelector(".quote").textContent = quote.text;
   document.querySelector(".author").textContent = "- " + quote.author;
 }
