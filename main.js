@@ -8,3 +8,14 @@ async function generateQuote() {
   document.querySelector(".quote").textContent = quote.text;
   document.querySelector(".author").textContent = "- " + quote.author;
 }
+
+function share() {
+  const quote = document.querySelector(".quote").textContent;
+  const author = document.querySelector(".author").textContent;
+  const apiUrl = "https://www.facebook.com/dialog/feed?display=popup";
+  const appId = "app_id=396411671918152";
+  const siteUrl = "link=https://quotes-randomizer.herokuapp.com/";
+  const text = `quote="${quote}" ${author}`;
+  const url = `${apiUrl}&${appId}&${siteUrl}&${text}`;
+  window.open(url, "share", "width=800,height=600");
+}
